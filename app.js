@@ -48,6 +48,12 @@ function calculateResults() {
 
 // Show Error
 function showError(error) {
+
+  // hide results
+  document.getElementById('results').style.display = 'none';
+  // Hide spinner/loader
+  document.getElementById('loading').style.display = 'none';
+
   // Create div
   const errorDiv = document.createElement('div');
 
